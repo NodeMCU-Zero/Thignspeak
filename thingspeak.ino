@@ -1,3 +1,10 @@
+/* Home data logger ( Humidity, Temperature, Lux value,water tank level ( Ultrasonic))
+Author : niwantha33@gmail.com, algobelforum@gmail.com
+*/
+
+
+
+
 #include <ESP8266WiFi.h>
 float T;// Temperature 
 float H;// Humidity
@@ -10,7 +17,7 @@ const char* password = "12345678"; // Password
 
 const char* host = "api.thingspeak.com"; //
 
-const char* privateKey = "J8G801QXNJU86DW7"; // Write API Key from thingspeak
+const char* privateKey = "J8G801QXNJU86DW7"; // Write API Key from thingspeak {Feel free to use this API}
 
 void setup() {
   Serial.begin(115200);
