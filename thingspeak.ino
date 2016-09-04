@@ -31,13 +31,20 @@ void setup() {
 
 }
 
+void timer(int delay_time) { // Delay loop 
+  for(int i =0; i <delay_time;i++){
+    delay(6000)
+  }
+}
+
 void loop() {
   Count ++;
   if (Count>32000) {// this is because of Count is "Int"
     Count =0;
   }
   Thingspeak(T,H,L,U,Count);
-
+  yield();
+  timer(10) // delay 60 Seconds 
 }
 
 
